@@ -1,25 +1,33 @@
-<!-- Student Name:
+<!-- Student Name: Taia
      Date:
-// REPLACE line #3-9 WITH INITIAL AT END OF COMMENT
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" //sam
+
 <body>
 <?php
 $FaceNamesSingular = array("one", "two", "three", "four", "five", "six");
-// REPLACE line #14-20 WITH INITIAL AT END OF COMMENT
+$FaceNamesPlural = array("ones", "twos", "threes", "fours", "fives", "sixes");
+$FaceValues = array( 1, 2, 3, 4, 5, 6); 
 
+function CheckForDoubles($Die1, $Die2){ 
+	global $FaceNamesSingular; 
+	global $FaceNamesPlural;
+	$ReturnValue = false; 
+	
      if ($Die1 == $Die2) {// Doubles
           echo "The roll was double ", $FaceNamesPlural[$Die1-1], ".<br />";
           $ReturnValue = true;
      }
-$FaceNamesPlural = array("ones", "twos", "threes", "fours", "fives", "sixes"); //sam
-// REPLACE line #27-33 WITH INITIAL AT END OF COMMENT
 
-function CheckForDoubles($Die1, $Die2) { //sam
      switch ($Score) {
      global $FaceNamesPlural; //sam
                echo "You rolled snake eyes!<br />";
                break;
-// REPLACE line #41-46 WITH INITIAL AT END OF COMMENT
+          case 3:
+               echo "You rolled a loose deuce!<br />"; 
+			   break;
+          case 5:
+               echo "You rolled a fever five!<br />"; 
+			   break;
+          case 7:  
                echo "You rolled a natural!<br />";
                break;
           case 9:
