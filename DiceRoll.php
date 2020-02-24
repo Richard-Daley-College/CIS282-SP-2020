@@ -1,21 +1,21 @@
-<!-- Student Name: Taia
+<!-- Student Name: Taia, Aleexis
      Date:
 -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml"> 
 <head>
  <title>Dice Roll</title>
-  <meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+   <meta http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
 </head>
 <body>
 <?php
 $FaceNamesSingular = array("one", "two", "three", "four", "five", "six");
 $FaceNamesPlural = array("ones", "twos", "threes", "fours", "fives", "sixes");
-$FaceValues = array( 1, 2, 3, 4, 5, 6); 
+ $FaceValues = array( 1, 2, 3, 4, 5, 6);
 
 function CheckForDoubles($Die1, $Die2){ 
-	global $FaceNamesSingular; 
+	global $FaceNamesSingular;  
 	global $FaceNamesPlural;
 	$ReturnValue = false; 
 	
@@ -25,7 +25,7 @@ function CheckForDoubles($Die1, $Die2){
      }
      else { // Not Doubles
 	 echo "The roll was a ", $FaceNamesSingular[$Die1-1 ],
-	 " and a ", $FaceNamesSingular[$Die2-1], ".<br />"; 
+	" and a ", $FaceNamesSingular[$Die2-1], ".<br />"; 
 	 $ReturnValue = false; 
 	 }
 	 
