@@ -1,7 +1,7 @@
-<!-- Student Name: Taia, Aleexis
+<!-- Student Name: Taia, Aleexis, Samantha
      Date:
 -->
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"> 
 <head>
@@ -14,9 +14,9 @@ $FaceNamesSingular = array("one", "two", "three", "four", "five", "six");
 $FaceNamesPlural = array("ones", "twos", "threes", "fours", "fives", "sixes");
  $FaceValues = array( 1, 2, 3, 4, 5, 6);
 
-function CheckForDoubles($Die1, $Die2){ 
+function CheckForDoubles($Die1, $Die2) { 
 	global $FaceNamesSingular;  
-	global $FaceNamesPlural;
+	global $FaceNamesPlural; 
 	$ReturnValue = false; 
 	
      if ($Die1 == $Die2) {// Doubles
@@ -28,9 +28,9 @@ function CheckForDoubles($Die1, $Die2){
 	" and a ", $FaceNamesSingular[$Die2-1], ".<br />"; 
 	 $ReturnValue = false; 
 	 }
-	 
-	 return $ReturnValue;
-}
+	  
+	 return $ReturnValue; 
+} 
 	 
 function DisplayScoreText($Score, $Doubles) {
      switch ($Score) {
