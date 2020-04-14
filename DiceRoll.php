@@ -11,12 +11,12 @@
 <body>
 <?php
 $FaceNamesSingular = array("one", "two", "three", "four", "five", "six");
-$FaceNamesPlural = array("ones", "twos", "threes", "fours", "fives", "sixes");
+$FaceNamesPlural = array("ones", "twos", "threes", "fours", "fives", "sixes"); 
  $FaceValues = array( 1, 2, 3, 4, 5, 6);
 
 function CheckForDoubles($Die1, $Die2) { 
 	global $FaceNamesSingular;  
-	global $FaceNamesPlural; 
+	global $FaceNamesPlural;  
 	$ReturnValue = false; 
 	
      if ($Die1 == $Die2) {// Doubles
@@ -40,10 +40,10 @@ function DisplayScoreText($Score, $Doubles) {
           case 3:
                echo "You rolled a loose deuce!<br />"; 
 			   break;
-          case 5:
+          case 5: 
                echo "You rolled a fever five!<br />"; 
 			   break;
-          case 7:  
+          case 7:   
                echo "You rolled a natural!<br />";
                break;
           case 9:
